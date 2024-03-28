@@ -9,10 +9,10 @@ template = """
     PRODUCT input text: {content};
     CUSTOMER age group (y): {agegroup};
     CUSTOMER main serviceneed: {serviceneed};
-    TASK: Write a product description that is tailored into this customer's Age group and serviceneed. Use age group specific slang.;
-    FORMAT: Present the result in the following order: (PRODUCT DESCRIPTION), (BENEFITS), (USE CASE);
-    PRODUCT DESCRIPTION: describe the product in 5 sentences;
-    BENEFITS: describe in 3 sentences why this product is perfect considering customers age group and serviceneed;
+    TASK: Write a service description that is tailored into this customer's Age group and serviceneed. Use age group specific slang.;
+    FORMAT: Present the result in the following order: (SERVICE DESCRIPTION), (BENEFITS), (USE CASE);
+    SERVICE DESCRIPTION: describe the service in 5 sentences;
+    BENEFITS: describe in 3 sentences why this service is perfect considering customers age group and serviceneed;
     USE CASE: write a story in 5 sentences, of an example weekend activity taking into account serviceneed {serviceneed} and age {agegroup}, write a story in first person, example "I started my Saturday morning with ...";
 """
 
@@ -33,8 +33,8 @@ st.header("Personaliseeritud turundusteksti konverter")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.markdown("Otstarve: tootetutvustustekstide personaliseerimine igale kliendile või kliendigruppidele; väljundtekst on kohandatud kliendi a) vanuserühmaga ja b) teenusevajadusega; sisendtekstiks on neutraalses vormis tootekirjeldus. \
-    \n\n Kasutusjuhend: 1) valmista ette tootekirjeldus (sisendtekst). 2) määra tarbijasegemendid lähtuvalt vanuserühma ja teenuste vajadustest. 3) sisesta ükshaaval tarbijasegmentide lõikes eeltoodud info äpi kasutajaliideses, saada ära. \
+    st.markdown("Otstarve: teenustetutvustustekstide personaliseerimine igale kliendile või kliendigruppidele; väljundtekst on kohandatud kliendi a) vanuserühmaga ja b) teenusevajadusega; sisendtekstiks on neutraalses vormis teenustekirjeldus. \
+    \n\n Kasutusjuhend: 1) valmista ette teenustekirjeldus (sisendtekst). 2) määra tarbijasegemendid lähtuvalt vanuserühma ja teenuste vajadustest. 3) sisesta ükshaaval tarbijasegmentide lõikes eeltoodud info äpi kasutajaliideses, saada ära. \
     4) kopeeri ükshaaval tarbijasegmentide lõikes äpi väljundteksti kõnealuse teenuse tutvustuslehele.")
 
 with col2:
